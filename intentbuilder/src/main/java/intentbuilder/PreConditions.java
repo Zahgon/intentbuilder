@@ -21,96 +21,74 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
 package intentbuilder;
 
 import android.content.Context;
 import android.os.Parcelable;
-
 import java.util.List;
 
 public class PreConditions {
 
-  private PreConditions() {
-  }
-
-  public static void validateContext(Context context) {
-    if (context == null) {
-      throw new IllegalStateException("Call IntentBuilder.context() first");
+    private PreConditions() {
     }
-  }
 
-  public static void validateNotEmpty(List param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.size(), message);
-  }
-
-  public static void validateNotEmpty(CharSequence[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(boolean[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(byte[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(char[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(double[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(float[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(int[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(long[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(short[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotEmpty(Parcelable[] param, String message) {
-    validateNotNull(param, message);
-    validateNotZero(param.length, message);
-  }
-
-  public static void validateNotNull(Object param, String message) {
-    if (param == null) {
-      throw new IllegalArgumentException(message + " must not be null");
+    public static void validateContext(Context context) {
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
-  }
 
-  public static void validateNotZero(int length, String message) {
-    if (length == 0) {
-      throw new IllegalArgumentException(message + " must not be 0 length");
+    public static void validateNotEmpty(List param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
-  }
 
-  public static void validateNotBlank(CharSequence param, String message) {
-    validateNotNull(param, message);
-    if (param.length() < 1) {
-      throw new IllegalArgumentException(message + " must not be empty");
+    public static void validateNotEmpty(CharSequence[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
-  }
+
+    public static void validateNotEmpty(boolean[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(byte[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(char[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(double[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(float[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(int[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(long[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(short[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotEmpty(Parcelable[] param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotNull(Object param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotZero(int length, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public static void validateNotBlank(CharSequence param, String message) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 }
